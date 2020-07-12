@@ -5,6 +5,6 @@
 #
 
 resource "aws_ecs_cluster" "jenkins" {
-  name = "Serverless Jenkins Cluster"
-  tags = var.tags  
+  name = "ServerlessJenkinsCluster"
+  tags = var.tags
 }

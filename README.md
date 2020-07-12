@@ -57,6 +57,12 @@ terraform apply tf.plan
 
 Once everything is running you can try to access the ApplicationLoadBalancer URL and it should show you a screen asking for an initial administrative password. To get this password create a temporary EC2 instance with the security group and IAM instance profile from the output of terraform and mount the EFS share. You will probalby first need to install the efs helper package via yum. Once you have the initial password you can destroy the instance.
 
+When you are done you can destroy everything simply via
+```bash
+terraform plan -destroy -target=module.serverless_jenkins -out=tf.plan
+terraform apply tf.plan
+```
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
