@@ -1,0 +1,34 @@
+[
+  {
+    "name": "jenkins",
+    "image": "jenkins/jenkins:lts",
+    "portMappings": [
+      {
+        "containerPort": 8001,
+        "hostPort": 8001,
+        "protocol": "tcp"
+      },
+      {
+        "containerPort": 50000,
+        "hostPort": 50000,
+        "protocol": "tcp"
+      }
+    ],
+    "mountPoints": [
+      {
+        "sourceVolume": "jenkins-home",
+        "containerPath": "/var/jenkins_home"
+      }
+    ],
+    "environment" : [
+      {
+        "name" : "JAVA_OPTS",
+        "value" : "-Dhudson.footerURL=https://www.bytesource.net"
+      },
+      {
+        "name": "JENKINS_OPTS",
+        "value": "--prefix=/ --httpPort=8001"
+      }
+    ]
+  }
+]
