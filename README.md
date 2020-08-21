@@ -1,10 +1,8 @@
-++bytesource logo++
-
 # terraform-serverless-jenkins
 
-Terraform module to showcase running Jenkins serverlessly on AWS Fargate.
+Terraform module to showcase running Jenkins serverlessly on AWS Fargate. You can read about some background to this at https://bytesource.net/en/blog/posts/serverless-jenkins-part-1/
 
-Disclaimer: This module is not intended for production use. Data and connections are not encrypted, and the IAM role used for the Jenkins master provides full Administrative access. If you want to run a setup like this in production reach out to us at ++link to quiz here++
+Disclaimer: This module is not intended for production use. Data and connections are not encrypted, and the IAM role used for the Jenkins master provides full Administrative access. If you want to run a setup like this in production reach out to us at https://bytesource.net/en/contact/.
 
 ## Usage
 
@@ -88,9 +86,9 @@ terraform apply tf.plan
 
 ## Help
 
-If you have any questions or want to run Jenkins on Fargate in production mode please reach out to use via +++ TODO +++.
+If you have any questions or want to run Jenkins on Fargate in production mode please reach out to us via https://bytesource.net/en/contact/.
 
-##Copyright
+## Copyright
 
 Copyright © 2020 [ByteSource Technology Consulting GmbH](https://bytesource.net/)
 
